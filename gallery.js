@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const categories={vystavba:'Výstavba domů',leseni:'Lešení',fasady:'Fasádní práce',dlazba:'Zámková dlažba',beton:'Betonářské práce',zemni:'Zemní a výkopové práce',vzduchotechnika:'Vzduchotechnika',doprava:'Kontejnerová doprava'};
+  const categories={vystavba:'Výstavba domů',leseni:'Lešení',fasady:'Fasádní práce',strechy:'Střechy a krovy',dlazba:'Zámková dlažba',beton:'Betonářské práce',zemni:'Zemní a výkopové práce',vzduchotechnika:'Vzduchotechnika',doprava:'Kontejnerová doprava'};
   const root='images/realizace/';
   const imageURL=path=>path.split('/').map(encodeURIComponent).join('/');
   const repo='fedyastoyka-ux/Mafelona';
@@ -53,5 +53,5 @@
     const info=document.getElementById('gallery-refresh-status');e.target.disabled=true;info.textContent='Obnovování…';
     try{await discover(true);info.textContent='Galerie obnovena. Nové snímky se zobrazí po dokončení publikace.';}catch{info.textContent='Aktualizaci se nepodařilo načíst. Zkuste to za chvíli.';}finally{e.target.disabled=false;}
   });
-  fetch('gallery-data.json?v=1').then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(data=>{photos=data;render();discover().catch(()=>{});}).catch(()=>{status.textContent='Galerii se nepodařilo načíst. Obnovte prosím stránku.';});
+  fetch('gallery-data.json?v=2').then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(data=>{photos=data;render();discover().catch(()=>{});}).catch(()=>{status.textContent='Galerii se nepodařilo načíst. Obnovte prosím stránku.';});
 })();
