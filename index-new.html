@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MAFELONA s.r.o. | Stavební práce</title>
+<meta name="description" content="MAFELONA s.r.o. – stavební, betonářské, zemní a výkopové práce, zámková dlažba a kontejnerová doprava.">
+<style>
+:root{--dark:#172a2c;--gold:#e9ac40}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Arial,sans-serif;color:#243031;background:#f7f7f3}
+header{background:#fff;display:flex;align-items:center;justify-content:space-between;padding:18px 5%;gap:20px;position:sticky;top:0;z-index:2;box-shadow:0 1px 8px #0001}
+header strong{font-size:23px;letter-spacing:.07em}
+nav a{margin-left:18px;color:#243031;text-decoration:none}
+section{padding:55px 5%}
+h2{font-size:32px;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{background:white;border-radius:9px;overflow:hidden;box-shadow:0 5px 20px #0001}
+.card img{width:100%;height:190px;object-fit:cover}
+.card div{padding:18px}
+.card h3{margin:0 0 8px}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.gallery img{width:100%;height:230px;object-fit:cover;border-radius:6px;cursor:pointer}
+footer{background:var(--dark);color:white;padding:32px 5%;text-align:center}
+#kontakt{background:#e8eeeb}
+#kontakt a{color:#154f56}
+dialog{border:0;padding:0;background:transparent;max-width:95vw}
+dialog img{max-width:95vw;max-height:90vh}
+dialog::backdrop{background:#000c}
+.approved-design{padding:0;background:#fff}
+.mockup{position:relative;max-width:1536px;margin:auto}
+.mockup img{width:100%;height:auto;display:block}
+.hotspot{position:absolute;display:block;z-index:1}
+.hotspot:focus-visible{outline:3px solid #ffbc20}
+.home{left:43%;top:0;width:8%;height:8%}
+.services{left:51%;top:0;width:9%;height:8%}
+.realizace{left:60%;top:0;width:13%;height:8%}
+.about{left:74%;top:0;width:14%;height:8%}
+.contact{left:88%;top:0;width:11%;height:8%}
+.calltoaction{left:4%;top:42%;width:19%;height:8%}
+#ospolecnosti{background:#fff}
+@media(max-width:700px){
+header{display:block}
+nav{margin-top:12px;display:flex;flex-wrap:wrap;gap:12px}
+nav a{margin:0}
+.grid,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+.gallery img{height:150px}
+}
+@media(max-width:440px){
+.grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header>
+<strong>MAFELONA</strong>
+<nav>
+<a href="#sluzby">Naše služby</a>
+<a href="#realizace">Naše realizace</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+</header>
+<main>
+<section class="approved-design" id="domu">
+<div class="mockup">
+<img src="images/schvaleny-navrh.jpg" alt="MAFELONA – schválený návrh úvodní stránky">
+<a class="hotspot home" href="#domu" aria-label="Domů"></a>
+<a class="hotspot services" href="#sluzby" aria-label="Služby"></a>
+<a class="hotspot realizace" href="#realizace" aria-label="Naše realizace"></a>
+<a class="hotspot about" href="#ospolecnosti" aria-label="O společnosti"></a>
+<a class="hotspot contact" href="#kontakt" aria-label="Kontakt"></a>
+<a class="hotspot calltoaction" href="#kontakt" aria-label="Kontaktujte nás"></a>
+</div>
+</section>
+
+<section id="sluzby">
+<h2>Naše služby</h2>
+<div class="grid">
+<article class="card">
+<img src="images/realizace/foto-05.jpg" alt="Výstavba domů">
+<div><h3>Výstavba domů</h3><p>Stavby a rekonstrukce objektů.</p></div>
+</article>
+<article class="card">
+<img src="images/realizace/foto-10.jpg" alt="Zemní práce">
+<div><h3>Zemní a výkopové práce</h3><p>Výkopy, terénní úpravy a příprava staveniště.</p></div>
+</article>
+<article class="card">
+<img src="images/realizace/foto-08.jpg" alt="Betonářské práce">
+<div><h3>Betonářské práce</h3><p>Základy, bednění a betonové konstrukce.</p></div>
+</article>
+<article class="card">
+<img src="images/realizace/foto-01.jpg" alt="Fasádní práce">
+<div><h3>Fasádní práce a zateplování</h3><p>Úpravy fasád a zateplení budov.</p></div>
+</article>
+<article class="card">
+<img src="images/realizace/foto-02.jpg" alt="Zámková dlažba">
+<div><h3>Zámková dlažba</h3><p>Pokládka dlažby a úpravy okolí staveb.</p></div>
+</article>
+<article class="card">
+<img src="images/realizace/foto-09.jpg" alt="Kontejnerová doprava">
+<div><h3>Kontejnerová doprava</h3><p>Přeprava menších kontejnerů.</p></div>
+</article>
+<article class="card">
+<img src="images/realizace/foto-13.jpg" alt="Vzduchotechnika">
+<div><h3>Vzduchotechnika</h3><p>Montáž a související stavební práce.</p></div>
+</article>
+</div>
+</section>
+
+<section id="ospolecnosti">
+<h2>O společnosti</h2>
+<p>MAFELONA s.r.o. poskytuje stavební a související služby.</p>
+</section>
+
+<section id="realizace">
+<h2>Naše realizace</h2>
+<div id="gallery" class="gallery"></div>
+</section>
+
+<section id="kontakt">
+<h2>Kontakt</h2>
+<p><b>MAFELONA s.r.o.</b><br>IČO: 22517294</p>
+<p>
+Telefon: <a href="tel:+420778086334">+420 778 086 334</a><br>
+E-mail: <a href="mailto:mafelona1@gmail.com">mafelona1@gmail.com</a>
+</p>
+</section>
+</main>
+
+<footer>© MAFELONA s.r.o.</footer>
+
+<dialog id="viewer" onclick="this.close()">
+<img id="large" alt="Fotografie realizace">
+</dialog>
+
+<script>
+fetch('gallery.json')
+.then(r=>r.json())
+.then(items=>{
+const g=document.querySelector('#gallery');
+items.forEach(item=>{
+let im=document.createElement('img');
+im.src=item.src;
+im.alt=item.alt||'Realizace';
+im.loading='lazy';
+im.onclick=()=>{
+document.querySelector('#large').src=im.src;
+document.querySelector('#viewer').showModal()
+};
+g.appendChild(im)
+})
+})
+.catch(()=>{
+document.querySelector('#gallery').textContent='Galerii se nepodařilo načíst.'
+});
+</script>
+</body>
+</html>
