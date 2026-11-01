@@ -1,0 +1,115 @@
+[
+  {
+    "src": "images/realizace/vystavba/realizace-01.jpg",
+    "categories": [
+      "vystavba",
+      "leseni",
+      "dlazba"
+    ],
+    "alt": "Výstavba domů – realizace 01"
+  },
+  {
+    "src": "images/realizace/vystavba/realizace-02.jpg",
+    "categories": [
+      "vystavba",
+      "dlazba"
+    ],
+    "alt": "Výstavba domů – realizace 02"
+  },
+  {
+    "src": "images/realizace/fasady/realizace-03.jpg",
+    "categories": [
+      "fasady",
+      "leseni"
+    ],
+    "alt": "Fasádní práce – realizace 03"
+  },
+  {
+    "src": "images/realizace/fasady/realizace-04.jpg",
+    "categories": [
+      "fasady",
+      "leseni"
+    ],
+    "alt": "Fasádní práce – realizace 04"
+  },
+  {
+    "src": "images/realizace/fasady/realizace-05.jpg",
+    "categories": [
+      "fasady",
+      "leseni"
+    ],
+    "alt": "Fasádní práce – realizace 05"
+  },
+  {
+    "src": "images/realizace/vystavba/realizace-06.jpg",
+    "categories": [
+      "vystavba",
+      "leseni"
+    ],
+    "alt": "Výstavba domů – realizace 06"
+  },
+  {
+    "src": "images/realizace/fasady/realizace-07.jpg",
+    "categories": [
+      "fasady",
+      "leseni"
+    ],
+    "alt": "Fasádní práce – realizace 07"
+  },
+  {
+    "src": "images/realizace/vystavba/realizace-08.jpg",
+    "categories": [
+      "vystavba"
+    ],
+    "alt": "Výstavba domů – realizace 08"
+  },
+  {
+    "src": "images/realizace/vystavba/realizace-09.jpg",
+    "categories": [
+      "vystavba"
+    ],
+    "alt": "Výstavba domů – realizace 09"
+  },
+  {
+    "src": "images/realizace/beton/realizace-10.jpg",
+    "categories": [
+      "beton"
+    ],
+    "alt": "Betonářské práce – realizace 10"
+  },
+  {
+    "src": "images/realizace/beton/realizace-11.jpg",
+    "categories": [
+      "beton"
+    ],
+    "alt": "Betonářské práce – realizace 11"
+  },
+  {
+    "src": "images/realizace/beton/realizace-12.jpg",
+    "categories": [
+      "beton"
+    ],
+    "alt": "Betonářské práce – realizace 12"
+  },
+  {
+    "src": "images/realizace/zemni/realizace-13.jpg",
+    "categories": [
+      "zemni"
+    ],
+    "alt": "Zemní a výkopové práce – realizace 13"
+  },
+  {
+    "src": "images/realizace/beton/realizace-14.jpg",
+    "categories": [
+      "beton"
+    ],
+    "alt": "Betonářské práce – realizace 14"
+  },
+  {
+    "src": "images/realizace/zemni/realizace-15.jpg",
+    "categories": [
+      "zemni"
+    ],
+    "alt": "Zemní a výkopové práce – realizace 15"
+  }
+]
