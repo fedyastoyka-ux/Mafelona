@@ -37,8 +37,8 @@
   Object.entries(categories).forEach(([key,label])=>{const o=document.createElement('option');o.value=key;o.textContent=label;select.append(o);});
   function uploadLink(){upload.href=`https://github.com/${repo}/upload/main/${root}${select.value}`;}
   select.addEventListener('change',uploadLink);uploadLink();
-  const cacheKey='mafelona-gallery-tree-v1';
-  function mergePaths(paths){const existing=new Set(photos.map(p=>p.src));for(const path of paths){if(existing.has(path))continue;const cat=path.slice(root.length).split('/')[0];if(!categories[cat])continue;photos.push({src:path,categories:[cat],alt:`${categories[cat]} – ${path.split('/').pop().replace(/\.[^.]+$/,'').replace(/[-_]/g,' ')}`});existing.add(path);}}
+  const cacheKey='mafelona-gallery-tree-v2';
+  function mergePaths(paths){const existing=new Set(photos.map(p=>p.src));for(const path of paths){if(existing.has(path)||path==='images/realizace/beton/realizace-11.jpg')continue;const cat=path.slice(root.length).split('/')[0];if(!categories[cat])continue;photos.push({src:path,categories:[cat],alt:`${categories[cat]} – ${path.split('/').pop().replace(/\.[^.]+$/,'').replace(/[-_]/g,' ')}`});existing.add(path);}}
   async function discover(force=false){
     if(!force){try{const c=JSON.parse(localStorage.getItem(cacheKey));if(c&&Date.now()-c.time<300000){mergePaths(c.paths);render();return;}}catch{}}
     const response=await fetch(`https://api.github.com/repos/${repo}/git/trees/main?recursive=1`,{cache:'no-store',signal:AbortSignal.timeout(15000)});
@@ -53,5 +53,5 @@
     const info=document.getElementById('gallery-refresh-status');e.target.disabled=true;info.textContent='Obnovování…';
     try{await discover(true);info.textContent='Galerie obnovena. Nové snímky se zobrazí po dokončení publikace.';}catch{info.textContent='Aktualizaci se nepodařilo načíst. Zkuste to za chvíli.';}finally{e.target.disabled=false;}
   });
-  fetch('gallery-data.json?v=2').then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(data=>{photos=data;render();discover().catch(()=>{});}).catch(()=>{status.textContent='Galerii se nepodařilo načíst. Obnovte prosím stránku.';});
+  fetch('gallery-data.json?v=3').then(r=>{if(!r.ok)throw new Error('manifest');return r.json();}).then(data=>{photos=data;render();discover().catch(()=>{});}).catch(()=>{status.textContent='Galerii se nepodařilo načíst. Obnovte prosím stránku.';});
 })();
